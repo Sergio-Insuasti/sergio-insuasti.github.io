@@ -57,6 +57,8 @@ I aim to develop a solid foundation in **programming and problem-solving** throu
   - JavaScript (learning)  
 - **Tools & Platforms**: Git, GitHub, basic Linux commands
 
+### Curriculum Vitae
+VIEW MY CV
 ---
 
 ## 💡 Projects  
