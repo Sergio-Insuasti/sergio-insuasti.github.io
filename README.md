@@ -58,7 +58,7 @@ I aim to develop a solid foundation in **programming and problem-solving** throu
 - **Tools & Platforms**: Git, GitHub, basic Linux commands
 
 ### Curriculum Vitae
-VIEW MY CV
+[VIEW MY CV](CV)
 ---
 
 ## 💡 Projects  
@@ -72,7 +72,7 @@ VIEW MY CV
 2. **rbuoy - File Synchronizer**  
    - **Tech Stack**: C  
    - A simple file synchronizer that monitors directories and archives old files
-   - VIEW MY PROJECT
+   - [VIEW MY PROJECT](rbuoy.tar)
   
 3. **breakout - Block-Breaking Game**
    - **Tech Stack**: C, MIPS (Assembly)
