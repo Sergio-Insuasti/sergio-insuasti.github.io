@@ -10,34 +10,34 @@ I am currently exploring studying Bachelor of Economics/Computer Science (majors
 ### _2024_:
 **Mathematics** 🤓<br>
 MATH1081 - Discrete Mathematics 🤫 (_in progress_)<br>
-MATH1131 - Mathematics 1A ➕ (_DN_)
-MATH1231 - Mathematics 1B ➖(_DN_)
+MATH1131 - Mathematics 1A ➕ (_DN_)<br>
+MATH1231 - Mathematics 1B ➖(_DN_)<br>
 
-**Computer Science** 🤠
-COMP1511 - Programming Fundamentals 👨‍🏫 (_CR_)
-COMP1521 - Computer Systems Fundamentals 💻 (_HD_)
-COMP1531 - Software Engineering Fundamentals 🧑‍🤝‍🧑 (_in progress_)
+**Computer Science** 🤠<br>
+COMP1511 - Programming Fundamentals 👨‍🏫 (_CR_)<br>
+COMP1521 - Computer Systems Fundamentals 💻 (_HD_)<br>
+COMP1531 - Software Engineering Fundamentals 🧑‍🤝‍🧑 (_in progress_)<br>
 
-**Economics** 🧐
-ECON1101 - Microeconomics 1 🧔(_CR_)
-ECON1102 - Macroeconomics 1 💱 (_CR_)
-ECON1401 - Economics Perspectives ✍️ (_in progress_)
+**Economics** 🧐<br>
+ECON1101 - Microeconomics 1 🧔(_CR_)<br>
+ECON1102 - Macroeconomics 1 💱 (_CR_)<br>
+ECON1401 - Economics Perspectives ✍️ (_in progress_)<br>
 
-### _2025_:
-**Mathematics** 🤓
-MATH2031 - Mathematical Computing 🖥️
-MATH2501 - Linear Algebra ❌
+### _2025_:<br>
+**Mathematics** 🤓<br>
+MATH2031 - Mathematical Computing 🖥️<br>
+MATH2501 - Linear Algebra ❌<br>
 
-**Computer Science** 🤠
-COMP2511 - Object-Oriented Design & Programming 👷
-COMP2521 - Data Structures and Algorithms 🏗️
-COMP3153 - Algorithmic Verification 🪪
+**Computer Science** 🤠<br>
+COMP2511 - Object-Oriented Design & Programming 👷<br>
+COMP2521 - Data Structures and Algorithms 🏗️<br>
+COMP3153 - Algorithmic Verification 🪪<br>
 
-**Economics** 🧐
-COMM1140 - Financial Management 💵
-ECON2101 - Microeconomics 2 🧒
-ECON2102 - Macroeconomics 2 🗺️
-ECON2209 - Business Forecasting ⛈️
+**Economics** 🧐<br>
+COMM1140 - Financial Management 💵<br>
+ECON2101 - Microeconomics 2 🧒<br>
+ECON2102 - Macroeconomics 2 🗺️<br>
+ECON2209 - Business Forecasting ⛈️<br>
 
 ### _2026_:
 _to be determined_
