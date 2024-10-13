@@ -79,5 +79,6 @@ I aim to develop a solid foundation in **programming and problem-solving** throu
    - A simple translation of a working game into a primitive assembly language (MIPS)
    - [VIEW MY PROJECT](breakout)
 
+## Socials
 
-
+**Let's connect!** 🤝 [CLICK HERE](https://www.linkedin.com/in/sergio-insuasti-003b26331/)
