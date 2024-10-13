@@ -65,14 +65,17 @@ I aim to develop a solid foundation in **programming and problem-solving** throu
    - **Tech Stack**: Node.js, TypeScript  
    - Building a backend for managing academic quizzes.  
    - Working on admin authentication, quiz creation, and session management.
+   - VIEW MY PROJECT
 
 2. **rbuoy - File Synchronizer**  
    - **Tech Stack**: C  
    - A simple file synchronizer that monitors directories and archives old files
+   - VIEW MY PROJECT
   
 3. **breakout - Block-Breaking Game**
    - **Tech Stack**: C, MIPS (Assembly)
    - A simple translation of a working game into a primitive assembly language (MIPS)
+   - [VIEW MY PROJECT](breakout)
 
 
 
