@@ -6,18 +6,21 @@ Welcome to my portfolio! I am passionate about learning **mathematics, economics
 ## Table of Contents
 - [About Me](#about-me)
 - [Courses](#courses)
+- [Learning Goals](#learning-goals)
 - [Skills](#skills)
 - [Projects](#projects)
-- [Learning Goals](#learning-goals)
-- [Contact](#contact)
+- [Future Ideas](#future-ideas)
+- [Contact](#socials)
 
 
 ---
-## About Me 📖  
+<a name="about-me"></a>
+## 📖 About Me 
 I am currently exploring studying Bachelor of Economics/Computer Science (majors: AI, Econometrics and Big Data) at UNSW and am in my First Year!
 I also have been a musician for a large part of my life! 🎵 🎻
 I have degrees in Music Performance and Production from top schools in Sydney and London, and look to create more opportunities for musicians to embrace technology, particularly working complementary to AI. 🤖
 
+<a name="courses"></a>
 ## Courses
 ### _2024_:
 **Mathematics** 🤓<br>
@@ -58,13 +61,13 @@ _to be determined_
 _to be determined_
 
 --- 
-
+<a name="learning-goals"></a>
 ## Learning Goals
 I aim to develop a solid foundation in **programming and problem-solving** through hands-on learning and creative experimentation.
 From this, I hope to averse myself in development and software engineering industries and apply my skills in either Economics or Computer Science.
 
 ---
-
+<a name="skills"></a>
 ## 🛠 Skills  
 
 ### Coding Skills  
@@ -76,7 +79,7 @@ From this, I hope to averse myself in development and software engineering indus
 ### Curriculum Vitae
 - [VIEW MY CV](CV.pdf)
 ---
-
+<a name="projects"></a>
 ## 💡 Projects  
 
 1. **Toohak Project (Ongoing)**  
@@ -93,7 +96,7 @@ From this, I hope to averse myself in development and software engineering indus
    - A simple translation of a working game into a primitive assembly language (MIPS)
   
 ---
-  
+<a name="future-ideas"></a>
 ## 🚀 Future Ideas
 
 1. **AI Study Buddy** 📖
@@ -113,6 +116,7 @@ From this, I hope to averse myself in development and software engineering indus
 3. ****
   
 --- 
+<a name="socials"></a>
 ## Socials
 
 **Let's connect!** 🤝 [CLICK HERE](https://www.linkedin.com/in/sergio-insuasti-003b26331/)
