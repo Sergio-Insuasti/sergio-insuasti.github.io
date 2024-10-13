@@ -8,8 +8,8 @@ Welcome to my portfolio! I am passionate about learning **mathematics, economics
 I am currently exploring studying Bachelor of Economics/Computer Science (majors: AI, Econometrics and Big Data) at UNSW and am in my First Year!
 
 ### _2024_:
-**Mathematics** 🤓
-MATH1081 - Discrete Mathematics 🤫 (_in progress_)
+**Mathematics** 🤓<br>
+MATH1081 - Discrete Mathematics 🤫 (_in progress_)<br>
 MATH1131 - Mathematics 1A ➕ (_DN_)
 MATH1231 - Mathematics 1B ➖(_DN_)
 
