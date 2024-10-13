@@ -7,21 +7,8 @@ Welcome to my portfolio! I am passionate about learning **mathematics, economics
 ## 📖 About Me  
 I am currently exploring studying Bachelor of Economics/Computer Science at UNSW and am in my First Year!
 
-_2024_:
+### _2024_:
 
-| Mathematics 🤓  | Computer Science 🤠 | Economics 🧐 |
-| ------------   - | -------------       | ------------- |
-| MATH1131         | COMP1511            | ECON1101      |
-| MATH1231         | COMP1521            | ECON1102      |
-| MATH1081         | COMP1531            | ECON1401      |
-
-_2025_:
-
-| Mathematics   | Computer Science | Economics     |
-| ------------- | -------------    | ------------- |
-| MATH1131      | COMP1511         | ECON1101      |
-| MATH1231      | COMP1521         | ECON1102      |
-| MATH1081      | COMP1531         | ECON1401      |
 
 - **Mathematics**: MATH1131: Mathematics 1A | MATH1231: Mathematics 1B | MATH1081: Discrete Mathematics
 - **Economics**: ECON1101: Microeconomics 1 | ECON1102: Macroeconomics 1 | ECON1401: Economic Perspectives
