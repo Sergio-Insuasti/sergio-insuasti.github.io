@@ -58,7 +58,7 @@ I aim to develop a solid foundation in **programming and problem-solving** throu
 - **Tools & Platforms**: Git, GitHub, basic Linux commands
 
 ### Curriculum Vitae
-[VIEW MY CV](CV)
+- [VIEW MY CV](CV)
 ---
 
 ## 💡 Projects  
