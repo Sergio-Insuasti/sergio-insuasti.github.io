@@ -12,7 +12,7 @@ body {
     color: #333;
     padding: 0 1rem;
     opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
+    animation: fadeIn 0.6s ease-in forwards;
 }
 
 header {
@@ -46,10 +46,6 @@ header h1 {
     margin-bottom: 0.5rem;
 }
 
-header p {
-    font-size: 1.1rem;
-}
-
 main {
     max-width: 900px;
     margin: 2rem auto;
@@ -57,7 +53,17 @@ main {
 
 section {
     margin-bottom: 3rem;
+    padding: 0 1rem; /* Add horizontal padding for consistency */
+  }
+  
+section h2 {
+font-size: 1.8rem;
+margin-bottom: 1rem;
+margin-top: 2rem; /* Ensures spacing from the previous section */
+padding-left: 0.5rem;
+text-align: left;
 }
+  
 
 #about {
     text-align: center;
@@ -83,6 +89,136 @@ section {
     margin: 0 auto;
 }
 
+.language-icons {
+    margin-top: 1.5rem;
+    color: white;
+  }
+  
+  .language-icons h4 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  
+  .language-carousel-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+  
+  .language-carousel {
+    display: flex;
+    gap: 2rem;
+    padding-left: 1rem;
+    width: max-content;
+  }
+  
+  .language-carousel img {
+    height: 40px;
+    max-height: 40px;
+    width: auto;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .language-carousel img:hover {
+    transform: scale(1.2);
+  }
+
+  .inverted-icon {
+    filter: invert(1) brightness(1.2);
+  }
+  
+#education {
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 280px;
+    height: 340px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 1rem;
+    color: white;
+    background-color: #1e1e1e;
+    border: 2px solid rgb(147, 176, 180);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .flip-card-front {
+    font-weight: bold;
+    padding-top: 50px;
+  }
+
+  .flip-card-front.unsw-logo {
+    background-image: url('https://static.igem.org/mediawiki/2020/4/49/T--UNSW_Australia--images--UNSW-logo.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: top 7.5rem center;
+    padding-top: 4rem;
+  }
+
+  .flip-card-front.google-logo {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg');
+    background-size: 120px;
+    background-repeat: no-repeat;
+    background-position: top 7.5rem center;
+    padding-top: 200 px;
+  }
+  
+  
+  .flip-card-back {
+    transform: rotateY(180deg);
+    font-size: 0.95rem;
+    background-color: #252525;
+  }
+
+  .flip-card-back ul {
+    list-style-type: disc;
+    padding-left: 1.5rem; /* <- adds spacing from the edge */
+    margin-top: 0.5rem;
+    text-align: left;
+  }
+  
+  .flip-card-back li {
+    margin-bottom: 0.3rem;
+  }
+  
 #projects {
     border-radius: 5px;
     color: #ffffff;
@@ -152,3 +288,8 @@ footer {
         opacity: 1;
     }
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+  
