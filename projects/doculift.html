@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DocuLift | Sergio Insuasti</title>
+  <link href="../styles.css" rel="stylesheet" />
+  <link href="projects_styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>📄 DocuLift Dashboard</h1>
+    <p>Automating PDF Extraction and Annotation with Dash + OCR</p>
+    <nav class="nav">
+      <a href="/index.html">Home</a>
+      <a href="/index.html#projects">Back to Projects</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>🎥 Demo Preview</h2>
+      <video controls width="100%" style="border-radius: 10px; margin-top: 1rem;">
+        <source src="../../Assets/Dash - Google Chrome 2025-04-14 11-39-08.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p style="margin-top: 1rem;">Watch how DocuLift processes scanned PDFs into structured data in real-time.</p>
+    </section>
+
+    <details  class="collapsible">
+      <summary>🚀 What is DocuLift?</summary>
+      <div class="content">
+        <p>DocuLift is a PDF processing dashboard that automates manual data entry tasks using computer vision and OCR. Built with Python's Dash framework, it enables users to extract structured data from scanned PDF forms in seconds — replacing hours of repetitive work.</p>
+        <p>The tool is designed for teams who deal with large volumes of form-based documents and need a fast, visual way to annotate and process data — whether for contracts, surveys, or regulatory paperwork.</p>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>⚙️ How It Works</summary>
+      <div class="content">
+        <strong>Select Detection Type</strong>: Choose between circle or square detection for form elements.<br>
+        <strong>Box Annotate Elements</strong>: Use the interface to draw boxes around questions, text labels, or image areas.<br>
+        <strong>Classify Regions</strong>: Tag selections as <code>Question</code>, <code>Text</code>, or <code>Image</code> using dropdowns.<br>
+        <strong>Review or Process in Bulk</strong>: Export annotations or apply them across all files in a folder.<br>
+        <strong>Upload PDFs</strong> from a selected folder using a clean, browser-based UI.<br>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>🧠 Why It Matters</summary>
+      <div class="content">
+        <p>Data teams often spend days manually transcribing PDF content into structured spreadsheets. DocuLift eliminates this bottleneck by letting users annotate visual elements once and then apply those annotations across multiple files. The result is faster processing, fewer errors, and consistent extraction across documents.</p>
+        <p>This was particularly useful in internal test runs where we reduced a 2-week data entry workload to under 2 hours using automation — all without writing a single line of code in the interface.</p>
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>🛠️ Built With</summary>
+      <div class="content">
+        <strong>Dash (Plotly)</strong> – For interactive UI components<br>
+        <strong>Pytesseract</strong> – OCR engine for reading scanned text<br>
+        <strong>OpenCV</strong> – For shape detection and visual annotation<br>
+        <strong>PIL</strong> – Image processing and display<br>
+        <strong>Pandas</strong> – Data wrangling and Excel export
+      </div>
+    </details>
+
+    <details class="collapsible">
+      <summary>📁 Sample Use Case</summary>
+      <div class="content">
+        <p>Imagine a client delivers a set of 100 scanned questionnaires. With DocuLift, an analyst can visually identify the relevant sections (e.g. "Question 1", "Contract Number", signature blocks), tag them once, and then apply the extraction logic across the entire batch. The final result is a structured spreadsheet containing all the values — ready for analysis or storage.</p>
+      </div>
+    </details>
+  </main>
+
+  <footer>
+    <p>© 2025 Sergio Insuasti | Built with Jekyll 🧪 + HTML & CSS</p>
+  </footer>
+</body>
+</html>
