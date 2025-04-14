@@ -76,7 +76,7 @@ main {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
   }
   
   header nav a:hover {
@@ -96,7 +96,7 @@ main {
     background-color: #1e1e1e;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
   }
 
   summary {
@@ -117,7 +117,7 @@ details.collapsible {
     color: #ffffff;
     margin-bottom: 1.5rem;
     overflow: hidden;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.6s ease, background-color 0.6s ease;
   }
   
   details.collapsible summary {
@@ -127,7 +127,7 @@ details.collapsible {
     font-weight: 600;
     color: #ffffff;
     list-style: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.6s ease;
   }
   
   details.collapsible[open] summary {
@@ -140,10 +140,10 @@ details.collapsible:hover {
     background-color: #252525;
 }
 
-details.collapsible[open] > *:not(summary) {
+details.collapsible[open] > .content {
     padding: 8px 8px 0 0;
     color: #ffffff;
-    animation: slideDown 0.5s ease-in-out;
+    animation: slideDown 0.6s ease-in-out;
   }
   
   @keyframes slideDown {
@@ -159,7 +159,6 @@ details.collapsible[open] > *:not(summary) {
   
   details.collapsible p,
   details.collapsible ul {
-    padding: 0 1rem 1rem;
-    color: #ccc;
+    color: #ffffff;
   }
   
