@@ -3,7 +3,7 @@ email: sinsuasti95@gmail.com
 description: >-
   Portfolio site of Sergio Insuasti – Computer Science and Economics student at UNSW.
 baseurl: ""
-url: "https://sergio-insuasti.io"
+url: "https://sergio-insuasti.github.io"
 markdown: kramdown
 theme: minima
 plugins:
