@@ -10,17 +10,21 @@ checking for cpuid.h... yes
 creating Makefile
 
 current directory: C:/Users/Sergio Insuasti/Desktop/COMP/PROJECTS/sergio-insuasti.github.io/vendor/bundle/ruby/3.3.0/gems/json-2.13.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20250907-11212-xo1z05 sitelibdir\=./.gem.20250907-11212-xo1z05 clean
+make DESTDIR\= sitearchdir\=./.gem.20250907-24148-rfl6bs sitelibdir\=./.gem.20250907-24148-rfl6bs clean
+bash.exe: warning: could not find /tmp, please create!
 
 current directory: C:/Users/Sergio Insuasti/Desktop/COMP/PROJECTS/sergio-insuasti.github.io/vendor/bundle/ruby/3.3.0/gems/json-2.13.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20250907-11212-xo1z05 sitelibdir\=./.gem.20250907-11212-xo1z05
+make DESTDIR\= sitearchdir\=./.gem.20250907-24148-rfl6bs sitelibdir\=./.gem.20250907-24148-rfl6bs
 generating parser-x64-mingw-ucrt.def
+bash.exe: warning: could not find /tmp, please create!
 compiling parser.c
 linking shared-object json/ext/parser.so
 
 current directory: C:/Users/Sergio Insuasti/Desktop/COMP/PROJECTS/sergio-insuasti.github.io/vendor/bundle/ruby/3.3.0/gems/json-2.13.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20250907-11212-xo1z05 sitelibdir\=./.gem.20250907-11212-xo1z05 install
-/usr/bin/install -c -m 0755 parser.so ./.gem.20250907-11212-xo1z05/json/ext
+make DESTDIR\= sitearchdir\=./.gem.20250907-24148-rfl6bs sitelibdir\=./.gem.20250907-24148-rfl6bs install
+bash.exe: warning: could not find /tmp, please create!
+/usr/bin/install -c -m 0755 parser.so ./.gem.20250907-24148-rfl6bs/json/ext
 
 current directory: C:/Users/Sergio Insuasti/Desktop/COMP/PROJECTS/sergio-insuasti.github.io/vendor/bundle/ruby/3.3.0/gems/json-2.13.2/ext/json/ext/parser
-make DESTDIR\= sitearchdir\=./.gem.20250907-11212-xo1z05 sitelibdir\=./.gem.20250907-11212-xo1z05 clean
+make DESTDIR\= sitearchdir\=./.gem.20250907-24148-rfl6bs sitelibdir\=./.gem.20250907-24148-rfl6bs clean
+bash.exe: warning: could not find /tmp, please create!
