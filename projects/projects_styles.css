@@ -6,7 +6,7 @@ main {
     max-width: 900px;
     margin: 0 auto;
   }
-  
+
   h1 {
     text-align: center;
   }
@@ -84,6 +84,28 @@ main {
   }
   
   header nav a:hover {
+    background-color: rgb(147, 176, 180);
+    color: white;
+    transform: scale(1.05);
+  }
+
+  main nav {
+    margin-top: 1rem;
+  }
+  
+  main nav a {
+    margin: 0 0.5rem;
+    padding: 8px 16px;
+    background-color: #1e1e1e;
+    border: 2px solid rgb(147, 176, 180);
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.6s ease;
+  }
+  
+  main nav a:hover {
     background-color: rgb(147, 176, 180);
     color: white;
     transform: scale(1.05);
