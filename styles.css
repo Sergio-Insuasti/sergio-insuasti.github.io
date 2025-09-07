@@ -102,16 +102,20 @@ text-align: left;
   
   .language-carousel-wrapper {
     width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    /* -webkit-overflow-scrolling: touch; */
     padding: 1rem 0;
     margin-top: 1rem;
   }
   
   .language-carousel {
-    display: flex;
+    display: inline-flex;
     gap: 2rem;
     padding-left: 1rem;
+    align-items: center;
+    white-space: nowrap;
+    will-change: transform;
+    animation: language-marquee 25s linear infinite;
     width: max-content;
   }
   
@@ -130,6 +134,22 @@ text-align: left;
   .inverted-icon {
     filter: invert(1) brightness(1.2);
   }
+  /* Seamless loop: translate by exactly one duplicate's width */
+  @keyframes language-marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Nice-to-have: pause when hovered */
+  .language-carousel-wrapper:hover .language-carousel {
+    animation-play-state: paused;
+  }
+
+  /* Respect accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .language-carousel { animation: none; }
+  }
+  /* === End auto-scrolling === */
   
 #education {
     border-radius: 5px;
@@ -251,8 +271,12 @@ text-align: left;
     border-radius: 5px;
     color: #ffffff;
     padding: 1rem;
+    text-align: center;
 }
 
+#contact h2  {
+  text-align: center;
+}
 #contact ul {
     list-style: none;
     padding-left: 0;
@@ -261,6 +285,7 @@ text-align: left;
 
 #contact li {
     margin-bottom: 0.5rem;
+    padding-right: 10px;
     font-size: 1.1rem;
     display: inline-block;
 }
