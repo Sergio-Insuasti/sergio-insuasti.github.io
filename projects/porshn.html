@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>DocuLift | Sergio Insuasti</title>
+    <title>porshn | Sergio Insuasti</title>
     <link href="../styles.css" rel="stylesheet" />
     <link href="projects_styles.css" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <h1>porshn: Founder</h1>
-        <p>Eliminating the need to chase your friends for money!</p>
+        <h1>porshn: Founder and Developer </h1>
+        <p>No more "who-owes-who" headaches!</p>
+        <a href="https://github.com/Sergio-Insuasti/porshn">View on Github</a>
         <nav class="nav">
             <a href="/index.html">Home</a>
             <a href="/index.html#projects">Back to Projects</a>
@@ -17,5 +18,66 @@
         </nav>
     </header>
     
-    <h2>Backend Under Development</h2>
+    <h1>Backend Under Development</h1>
+
+    <details class="collapsible">
+        <summary>What is porshn?</summary>
+        <div class = "content">
+            <p><em>Ever grown tired of chasing your friends for money?</em></p>
+            <p><em>Ever wished for one place to log all your split bills and expenses?</em></p>
+            <p>
+                porshn is a simple app that splits bills and expenses across a group of users.</p>
+                By centralising users into private groups, all users can be:
+                <ul>
+                    <li>Notified of New or Incoming bills</li>
+                    <li>Assigned an equal (or custom) value of a bill</li>
+                    <li>Assigned work to "pay off" bills</li>
+                </ul>
+            </p>
+        </div>
+    </details>
+
+
+    <details class="collapsible">
+        <summary>Why It Matters</summary>
+        <div class="content">
+            <p>
+                As a university student, I can relate to the situation we face when a bill is on the table.</br>
+                Seeing as we are busy studying, we are often caught being unable to pay our fair share.</br>
+                porshn has been conceived to ensure that this doesn't have to be the case, with split bills being
+                easily sorted whether paid or incoming, in a social/group setting.
+            </p>
+        </div>
+    </details>
+
+    <details class = "collapsible">
+        <summary>Tech Stack</summary>
+        <div class="content">
+            <em>Backend</em>
+            <ul>
+                <li>TypeScript</li>
+                <li>NestJS</li>
+                <li>Prisma</li>
+                <li>PostgreSQL</li>
+            </ul>
+            <em>Mobile</em>
+            <ul>
+                <li>React Native (Expo)</li>
+            </ul>
+            <em>Infrastructure</em>
+            <ul>
+                <li>Docker (local)</li>
+                <li>CI/CD (TBD)</li>
+                <li>EAS for mobile builds (TBD)</li>
+            </ul>
+            <em>Standards</em>
+            <ul>
+                <li>ESLint</li>
+                <li>Jest</li>
+                <li>Supertest</li>
+                <li>ADRs</li>
+                <li>Changelog</li>
+            </ul>
+        </div>
+    </details>
 </body>
