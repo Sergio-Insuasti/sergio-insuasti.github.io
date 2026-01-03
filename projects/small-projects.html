@@ -8,21 +8,19 @@
   <link href="../styles.css" rel="stylesheet" />
   <link href="projects_styles.css" rel="stylesheet" />
 </head>
-
+<body id="top"></body>
 <body>
-
   <header>
     <h1>Small Projects</h1>
     <p>A collection of focused projects across multiple languages</p>
 
     <nav class="nav">
-      <a href="/index.html">Home</a>
+      <a href="/">Home</a>
       <a href="/index.html#projects">Back to Projects</a>
       <a href="./doculift.html">← DocuLift</a>
       <a href="https://github.com/Sergio-Insuasti/small-projects" target="_blank">GitHub Repo</a>
     </nav>
   </header>
-
   <main>
 
     <!-- ===== C =====
@@ -137,6 +135,26 @@
     </section>
 
   </main>
+
+  <a href="#top" id="scroll-top-btn" aria-label="Back to top">
+    ↑
+  </a>
+
+  <script>
+    const scrollBtn = document.getElementById("scroll-top-btn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        scrollBtn.classList.add("show");
+      } else {
+        scrollBtn.classList.remove("show");
+      }
+    });
+  </script>
+
+  <footer>
+    <p>© 2026 Sergio Insuasti | Built with Jekyll, HTML & CSS</p>
+  </footer>
 
 </body>
 

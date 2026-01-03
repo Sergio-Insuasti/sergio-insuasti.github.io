@@ -6,14 +6,15 @@
   <link href="../styles.css" rel="stylesheet" />
   <link href="projects_styles.css" rel="stylesheet" />
 </head>
+<body id="top"></body>
 <body>
   <header>
     <h1>DocuLift (Assistant Developer)</h1>
     <p>Automating PDF Extraction and Data Capture with Dash + OCR</p>
     <nav class="nav">
-      <a href="/index.html">Home</a>
+      <a href="/">Home</a>
       <a href="/index.html#projects">Back to Projects</a>
-      <a href="./porshn.html">← porshn</a>
+      <!-- <a href="./porshn.html">← porshn</a> -->
       <a href="./small-projects.html">Small Projects →</a>
     </nav>
   </header>
@@ -82,7 +83,7 @@
   </main>
 
   <footer>
-    <p>© 2025 Sergio Insuasti | Built with Jekyll 🧪 + HTML & CSS</p>
+    <p>© 2026 Sergio Insuasti | Built with Jekyll, HTML & CSS</p>
   </footer>
 
   <script>
@@ -111,6 +112,22 @@
       if (event.persisted || performance.getEntriesByType("navigation")[0].type === "back_forward") {
         video.load();
         enableControlsAndPlay();
+      }
+    });
+  </script>
+
+  <a href="#top" id="scroll-top-btn" aria-label="Back to top">
+  ↑
+  </a>
+
+  <script>
+    const scrollBtn = document.getElementById("scroll-top-btn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        scrollBtn.classList.add("show");
+      } else {
+        scrollBtn.classList.remove("show");
       }
     });
   </script>
