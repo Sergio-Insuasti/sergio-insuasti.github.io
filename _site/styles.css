@@ -1,35 +1,33 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    transition: opacity 0.1 ease;
+  box-sizing: border-box;
+  transition: opacity 0.1 ease;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background-color: #121212;
-    color: #333;
-    padding: 0 1rem;
-    opacity: 0;
-    animation: fadeIn 0.6s ease-in forwards;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #333;
+  padding: 0 1rem;
+  opacity: 0;
+  animation: fadeIn 0.6s ease-in forwards;
 }
 
 header {
-    text-align: center;
-    color: white;
-    padding: 2rem 1rem;
-    margin: 0;
+  text-align: center;
+  color: white;
+  padding: 2rem 1rem;
+  margin: 0;
 }
 
 header nav a {
-    margin: auto;
-    padding: 8px 16px;
-    color: #ffffff;
-    background-color: #333;
-    border: 2px solid rgb(147, 176, 180);
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  margin: auto;
+  padding: 8px 16px;
+  color: #ffffff;
+  background-color: #333;
+  border: 2px solid rgb(147, 176, 180);
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
 .nav {
@@ -37,228 +35,254 @@ header nav a {
 }
 
 header nav a:hover {
-    transform: scale(1.1);
-    background-color: rgb(147, 176, 180);
-    color: white;
+  transform: scale(1.1);
+  background-color: rgb(147, 176, 180);
+  color: white;
 }
 
 header h1 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 main {
-    max-width: 900px;
-    margin: 2rem auto;
+  max-width: 900px;
+  margin: 2rem auto;
 }
 
 section {
-    margin-bottom: 3rem;
-    padding: 0 1rem; /* Add horizontal padding for consistency */
-  }
+  margin-bottom: 1.5rem;
+  padding: 0 1rem;
+}
   
 section h2 {
 font-size: 1.8rem;
 margin-bottom: 1rem;
-margin-top: 2rem; /* Ensures spacing from the previous section */
+margin-top: 1rem; 
 padding-left: 0.5rem;
 text-align: left;
+}
+
+section h3 {
+  margin-top: 1rem;
+  padding-left: 1rem;
 }
   
 
 #about {
-    text-align: center;
-    border-radius: 5px;
-    color: #ffffff;
+  text-align: center;
+  border-radius: 5px;
+  color: #ffffff;
 }
 
 #about img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin: 1rem 0;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 1rem 0;
 }
 
 #about img:hover {
-    transform: scale(1.1);
-    transition: color 0.3s, transform 0.3s;
+  transform: scale(1.1);
+  transition: color 0.3s, transform 0.3s;
 }
 
 #about p {
-    max-width: 600px;
-    margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .language-icons {
-    margin-top: 1.5rem;
-    color: white;
-  }
-  
-  .language-icons h4 {
-    margin-bottom: 0.5rem;
-    font-weight: 500;
-    font-size: 1.1rem;
-  }
-  
-  .language-carousel-wrapper {
-    width: 100%;
-    overflow: hidden;
-    /* -webkit-overflow-scrolling: touch; */
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
-  
-  .language-carousel {
-    display: inline-flex;
-    gap: 2rem;
-    padding-left: 1rem;
-    align-items: center;
-    white-space: nowrap;
-    will-change: transform;
-    animation: language-marquee 25s linear infinite;
-    width: max-content;
-  }
-  
-  .language-carousel img {
-    height: 40px;
-    max-height: 40px;
-    width: auto;
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
-  }
-  
-  .language-carousel img:hover {
-    transform: scale(1.2);
-  }
+  margin-top: 1.5rem;
+  color: white;
+}
 
-  .inverted-icon {
-    filter: invert(1) brightness(1.2);
-  }
-  /* Seamless loop: translate by exactly one duplicate's width */
-  @keyframes language-marquee {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
+.language-icons h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
 
-  /* Nice-to-have: pause when hovered */
-  .language-carousel-wrapper:hover .language-carousel {
-    animation-play-state: paused;
-  }
+.language-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  /* -webkit-overflow-scrolling: touch; */
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
 
-  /* Respect accessibility */
-  @media (prefers-reduced-motion: reduce) {
-    .language-carousel { animation: none; }
-  }
-  /* === End auto-scrolling === */
+.language-carousel {
+  display: inline-flex;
+  gap: 2rem;
+  padding-left: 1rem;
+  align-items: center;
+  white-space: nowrap;
+  will-change: transform;
+  animation: language-marquee 20s linear infinite;
+  width: max-content;
+}
+
+#core, #design {
+  animation: none;
+  transform: none;
+}
+
+.language-carousel img {
+  height: 40px;
+  max-height: 40px;
+  width: auto;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.language-carousel img:hover {
+  transform: scale(1.2);
+}
+
+.inverted-icon {
+  filter: invert(1) brightness(1.2);
+}
+/* Seamless loop: translate by exactly one duplicate's width */
+@keyframes language-marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.language-carousel-wrapper:hover .language-carousel {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .language-carousel { animation: none; }
+}
+/* === End auto-scrolling === */
   
 #education {
-    border-radius: 5px;
-    color: #ffffff;
-    padding: 1rem;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 1rem;
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 2rem;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
   
-  .flip-card {
-    background-color: transparent;
-    width: 280px;
-    height: 340px;
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    padding: 1rem;
-    color: white;
-    background-color: #1e1e1e;
-    border: 2px solid rgb(147, 176, 180);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .flip-card-front {
-    font-weight: bold;
-    padding-top: 50px;
-  }
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 340px;
+  perspective: 1000px;
+}
 
-  .flip-card-front.unsw-logo {
-    background-image: url('https://static.igem.org/mediawiki/2020/4/49/T--UNSW_Australia--images--UNSW-logo.png');
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: top 7.5rem center;
-    padding-top: 4rem;
-  }
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
-  .flip-card-front.google-logo {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg');
-    background-size: 120px;
-    background-repeat: no-repeat;
-    background-position: top 7.5rem center;
-    padding-top: 200 px;
-  }
-  
-  
-  .flip-card-back {
-    transform: rotateY(180deg);
-    font-size: 0.95rem;
-    background-color: #252525;
-  }
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
-  .flip-card-back ul {
-    list-style-type: disc;
-    padding-left: 1.5rem; /* <- adds spacing from the edge */
-    margin-top: 0.5rem;
-    text-align: left;
-  }
-  
-  .flip-card-back li {
-    margin-bottom: 0.3rem;
-  }
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  padding: 1rem;
+  color: white;
+  background-color: #1e1e1e;
+  border: 2px solid rgb(147, 176, 180);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#unsw {
+  padding: 0.5rem;
+}
+
+#unsw p {
+  margin: 0 0 0 0;
+}
+
+.flip-card-front {
+  font-weight: bold;
+  padding-top: 50px;
+}
+
+.flip-card-front.unsw-logo {
+  background-image: url('assets/logos/UNSW_logo.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: top 7.5rem center;
+  padding-top: 4rem;
+}
+
+.flip-card-front.google-logo {
+  background-image: url("assets/logos/Google_logo.png");
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-position: top 7.5rem center;
+  padding-top: 200 px;
+}
+
+.flip-card-front.aws-logo {
+  background-image: url("assets/logos/aws_logo.png");
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: top 7.5rem center;
+  padding-top: 5rem;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  font-size: 0.95rem;
+  background-color: #252525;
+}
+
+.flip-card-back ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+.flip-card-back li {
+  margin-bottom: 0.3rem;
+}
   
 #projects {
-    border-radius: 5px;
-    color: #ffffff;
-    padding: 1rem;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 1rem;
 }
 
 .project {
-    padding: 1rem;
-    border-radius: 8px;
-    border: 3px solid, rgb(147, 176, 180);
-    background-color: #ffffff27;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 3px solid, rgb(147, 176, 180);
+  background-color: #ffffff27;
 }
-
-.project:hover {
-    transform: scale(1.03);
-    transition: color 0.3s, transform 0.3s;
+.prject:hover {
+  transform: scale(1.03);
+  transition: color 0.3s, transform 0.3s;
 }
 
 .project h3 {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  margin-left: 1rem;
 }
 
 .project-link {

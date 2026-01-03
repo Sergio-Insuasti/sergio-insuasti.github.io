@@ -1,188 +1,38 @@
-main {
-    color: #ffffff;
-    font-size: 1rem;
-    line-height: 1.7;
-    padding: 2rem 1rem;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  h1 {
-    text-align: center;
-  }
-  
-  section {
-    margin-bottom: 3rem;
-  }
-  
-  /* Headings */
-  section h1, section h2, section h3 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-  }
-  
-  section h1 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-  
-  section h2 {
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  section ul, section ol {
-    margin-left: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  section li {
-    margin-bottom: 0.75rem;
-    line-height: 1.6;
-  }
-  
-  section p {
-    margin-bottom: 1.25rem;
-  }
-  
-  code {
-    background-color: #1e1e1e;
-    color: #f8f8f2;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.95rem;
-  }
-  
-  pre code {
-    display: block;
-    padding: 1rem;
-    margin-top: 0.5rem;
-    background-color: #1a1a1a;
-    border-radius: 6px;
-    overflow-x: auto;
-  }
-  
-  header nav {
-    margin-top: 1rem;
-  }
-  
-  header nav a {
-    margin: 0 0.5rem;
-    padding: 8px 16px;
-    background-color: #1e1e1e;
-    border: 2px solid rgb(147, 176, 180);
-    color: #ffffff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.6s ease;
-  }
-  
-  header nav a:hover {
-    background-color: rgb(147, 176, 180);
-    color: white;
-    transform: scale(1.05);
-  }
-
-  main nav {
-    margin-top: 1rem;
-  }
-  
-  main nav a {
-    margin: 0 0.5rem;
-    padding: 8px 16px;
-    background-color: #1e1e1e;
-    border: 2px solid rgb(147, 176, 180);
-    color: #ffffff;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: all 0.6s ease;
-  }
-  
-  main nav a:hover {
-    background-color: rgb(147, 176, 180);
-    color: white;
-    transform: scale(1.05);
-  }
-
-  details {
-    border: 2px solid rgb(147, 176, 180);
-    border-radius: 8px;
-    background-color: #1e1e1e;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    transition: all 0.6s ease;
-  }
-
-  summary {
-    font-weight: 600;
-    font-size: 1.25rem;
-    cursor: pointer;
-    color: #ffffff;
-  }
-
-  summary:hover {
-    color: rgb(147, 176, 180);
-  }
-
-details.collapsible {
-    border: 2px solid rgb(147, 176, 180);
-    border-radius: 8px;
-    background-color: #1e1e1e;
-    color: #ffffff;
-    margin-bottom: 1.5rem;
-    overflow: hidden;
-    transition: transform 0.6s ease, background-color 0.6s ease;
-  }
-  
-  details.collapsible summary {
-    cursor: pointer;
-    padding: 1rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #ffffff;
-    list-style: none;
-    transition: background-color 0.6s ease;
-  }
-  
-  details.collapsible[open] summary {
-    border-bottom: 1px solid rgb(147, 176, 180);
-    background-color: #242424;
+/* ===== PROJECT GRID ===== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-details.collapsible:hover {
-    transform: scale(1.02);
-    background-color: #252525;
+/* ===== PROJECT CARD ===== */
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 1.25rem;
+  min-height: 90px;
+
+  background-color: #1e1e1e;
+  border: 2px solid rgb(147, 176, 180);
+  border-radius: 10px;
+
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-details.collapsible[open] > .content {
-    padding: 8px 8px 0 0;
-    color: #ffffff;
-    animation: slideDown 0.6s ease-in-out;
-}
-  
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.project-card:hover {
+  transform: scale(1.05);
+  background-color: rgb(147, 176, 180);
+  color: #ffffff;
 }
 
-  details.collapsible .content p,
-  details.collapsible .content ul {
-    margin-left: 1.5rem;
-    padding-left: 1.5rem;
-    color: #ffffff;
-  }
-
-  
+h2 {
+  color: #ffffff;
+}
