@@ -122,7 +122,7 @@ section h3 {
   width: max-content;
 }
 
-#core, #design {
+#core {
   animation: none;
   transform: none;
 }
