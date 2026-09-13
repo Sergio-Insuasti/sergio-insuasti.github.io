@@ -424,20 +424,48 @@ p {
   font-size: 1.02rem;
 }
 
-/* ---- work: a ruled list of entries, not a shadow-card grid ---- */
-.work-grid {
+.work-section .section-intro {
+  justify-items: center;
+  margin-inline: auto;
+  text-align: center;
+}
+
+/* ---- work: a horizontal carousel, so the page reads short without losing depth ---- */
+.work-carousel {
+  --work-card-w: min(600px, 84vw);
   display: grid;
-  gap: 0;
-  border-top: 1px solid var(--line-strong);
+  gap: 1.1rem;
+}
+
+.work-track {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding-inline: calc((100% - var(--work-card-w)) / 2);
+  padding: 0.2rem calc((100% - var(--work-card-w)) / 2) 0.6rem;
+  margin: -0.2rem 0 0;
+  scrollbar-width: none;
+}
+
+.work-track::-webkit-scrollbar {
+  display: none;
+}
+
+.work-track:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 4px;
 }
 
 .work-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   grid-template-areas: "kicker kicker" "title result" "desc desc" "tags link";
+  flex: 0 0 var(--work-card-w);
+  scroll-snap-align: center;
   gap: 0.6rem 1.5rem;
-  padding: 1.9rem 0;
-  border-bottom: 1px solid var(--line);
+  padding: 1.7rem 1.8rem;
+  border: 1px solid var(--line-strong);
   color: var(--ink);
   text-decoration: none;
 }
@@ -499,8 +527,48 @@ p {
   max-width: 52ch;
 }
 
-.work-card-featured {
-  border-bottom: 1px solid var(--line);
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.carousel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex: none;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 160ms ease, color 160ms ease;
+}
+
+.carousel-btn:hover:not(:disabled),
+.carousel-btn:focus-visible:not(:disabled) {
+  border-color: var(--ink);
+  color: var(--signal);
+}
+
+.carousel-btn:disabled {
+  color: var(--muted);
+  opacity: 0.4;
+  cursor: default;
+}
+
+.carousel-counter {
+  margin: 0;
+  color: var(--muted);
+  font-family: "IBM Plex Mono", Consolas, monospace;
+  font-size: 0.86rem;
+  letter-spacing: 0.02em;
 }
 
 .tag-list {
