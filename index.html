@@ -377,15 +377,22 @@
         return closest;
       }
 
-      function updateControls() {
-        const i = currentIndex();
+      function setActive(i) {
         indexEl.textContent = String(i + 1).padStart(2, "0");
         prevBtn.disabled = i === 0;
         nextBtn.disabled = i === cards.length - 1;
+        cards.forEach((card, idx) => {
+          card.classList.toggle("is-dimmed", idx !== i);
+        });
+      }
+
+      function updateControls() {
+        setActive(currentIndex());
       }
 
       function goTo(i) {
         const clamped = Math.max(0, Math.min(cards.length - 1, i));
+        setActive(clamped);
         cards[clamped].scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
       }
 

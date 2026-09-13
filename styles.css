@@ -468,6 +468,11 @@ p {
   border: 1px solid var(--line-strong);
   color: var(--ink);
   text-decoration: none;
+  transition: opacity 300ms ease-out;
+}
+
+.work-card.is-dimmed {
+  opacity: 0;
 }
 
 .work-card .card-kicker {
