@@ -49,6 +49,7 @@ body.project-page a {
 
 .project-hero,
 .hero {
+  display: block;
   position: relative;
   overflow: hidden;
   padding: clamp(1.6rem, 3vw, 2.2rem) 0 clamp(2rem, 3.4vw, 2.6rem);
@@ -57,6 +58,7 @@ body.project-page a {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
+  max-width: none;
 }
 
 .hero-split {
@@ -90,6 +92,7 @@ body.project-page a {
 .project-hero h1,
 .hero h1,
 .coming-soon-card h1 {
+  max-width: none;
   margin: 0;
   font-family: "Fraunces", Georgia, serif;
   font-weight: 560;
@@ -276,7 +279,8 @@ body.project-page a {
   padding: 1.35rem;
 }
 
-.panel {
+.page-grid > .panel,
+.split-layout > .panel {
   grid-column: span 12;
 }
 
@@ -289,6 +293,7 @@ body.project-page a {
 .detail-card h3,
 .stack-card h2,
 .section-heading {
+  max-width: none;
   margin: 0 0 0.8rem;
   font-family: "Fraunces", Georgia, serif;
   font-weight: 500;
@@ -355,6 +360,7 @@ body.project-page code {
 .jump-links,
 .content-stack {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 1rem;
 }
 

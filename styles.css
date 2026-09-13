@@ -500,9 +500,6 @@ p {
 }
 
 .work-card-featured {
-  background: var(--flag-soft);
-  margin-inline: -1.4rem;
-  padding-inline: 1.4rem;
   border-bottom: 1px solid var(--line);
 }
 
@@ -787,11 +784,6 @@ code {
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
-  }
-
-  .work-card-featured {
-    margin-inline: -1rem;
-    padding-inline: 1rem;
   }
 
   .signal-strip {
