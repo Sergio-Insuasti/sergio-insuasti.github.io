@@ -1,10 +1,25 @@
 title: Sergio Insuasti
 email: sinsuasti95@gmail.com
 description: >-
-  Portfolio site of Sergio Insuasti – Computer Science and Economics student at UNSW.
-baseurl: ""
+  Portfolio site of Sergio Insuasti - Computer Science and Economics student at
+  UNSW.
 url: "https://sergio-insuasti.github.io"
+baseurl: ""
+lang: en-AU
+timezone: Australia/Sydney
 markdown: kramdown
 theme: minima
+permalink: pretty
+
+kramdown:
+  input: GFM
+
 plugins:
   - jekyll-feed
+
+exclude:
+  - .bundle/
+  - .jekyll-cache/
+  - vendor/
+  - command.txt
+  - html

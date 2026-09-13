@@ -1,62 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>porshn | Sergio Insuasti</title>
-    <link href="../styles.css" rel="stylesheet" />
-    <link href="projects_styles.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>porshn | Sergio Insuasti</title>
+  <link href="../styles.css" rel="stylesheet" />
+  <link href="projects_styles.css" rel="stylesheet" />
 </head>
-<body>
-    <header>
-        <h1>porshn: Founding Developer </h1>
-        <p>No more "who-owes-who" headaches!</p>
-        <nav class="nav">
-            <a href="/index.html">Home</a>
-            <a href="/index.html#projects">Back to Projects</a>
-            <a href="https://github.com/Sergio-Insuasti/porshn" target="_blank">View on Github</a>
-        </nav>
+<body class="project-page" id="top">
+  <div class="project-shell">
+    <header class="project-hero">
+      <span class="hero-topline">Founding developer</span>
+      <h1>porshn</h1>
+      <p class="hero-summary">
+        A shared-expenses concept designed to remove the awkwardness from group bills,
+        recurring payments, and household coordination. The vision is simple:
+        fewer reminders, clearer ownership, and less friction when money moves through a group.
+      </p>
+      <div class="hero-actions">
+        <a class="button-link primary" href="https://github.com/Sergio-Insuasti/porshn" target="_blank" rel="noreferrer">View on GitHub</a>
+        <a class="button-link" href="/index.html#work">Back to projects</a>
+        <a class="button-link" href="/index.html">Home</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-pill">
+          <strong>Role</strong>
+          <span>Founding developer</span>
+        </div>
+        <div class="stat-pill">
+          <strong>Category</strong>
+          <span>Expense splitting and group coordination</span>
+        </div>
+        <div class="stat-pill">
+          <strong>Platform</strong>
+          <span>Backend in progress, mobile planned</span>
+        </div>
+      </div>
+      <div class="status-banner">
+        This project is still in development. This page is intentionally framed as a concept-and-progress overview rather than a finished product showcase.
+      </div>
     </header>
-    
-    <main>
-        <h1>Backend Under Development</h1>
-        <details class="collapsible">
-            <summary>What is porshn?</summary>
-            <div class = "content">
-                <p><em>Ever grown tired of chasing your friends for money?</em></p>
-                <p><em>Ever wished for one place to log all your split bills and expenses?</em></p></br>
 
-                <p>
-                    porshn is a simple app that splits bills and expenses across a group of users.
-                    By centralising users into private groups, all users can be notified of new or incoming bills, 
-                    equally assign upcoming or paid bills and delegate/rotate chores, and even extend to using chores as payment!
-                </p>
+    <main class="split-layout">
+      <div class="main-column">
+        <section class="panel">
+          <h2>What is porshn?</h2>
+          <p>
+            porshn is a simple app that splits bills and expenses across a group of users.
+            By centralising users into private groups, everyone can be notified about new or incoming bills,
+            assign paid or upcoming expenses more fairly, and coordinate chores alongside financial responsibilities.
+          </p>
+          <p>
+            The larger ambition is to make shared living smoother. In the same place where people split rent,
+            groceries, and utilities, they can also manage who is handling what next.
+          </p>
+        </section>
+
+        <section class="feature-grid">
+          <article class="feature-card">
+            <span class="card-eyebrow">Problem</span>
+            <h3>No more "who owes who?" headaches</h3>
+            <p>Instead of scattered reminders across messages, the product aims to centralise shared costs in one calm workflow.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-eyebrow">Audience</span>
+            <h3>Built from student life</h3>
+            <p>The original use case comes from the reality of uni housing, shared budgets, and busy schedules.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-eyebrow">Direction</span>
+            <h3>Money plus household coordination</h3>
+            <p>The concept expands beyond splitting payments by exploring chores, delegation, and shared accountability.</p>
+          </article>
+        </section>
+
+        <section class="panel">
+          <h2>Why it matters</h2>
+          <p>
+            As a university student, I know how quickly a simple bill can become an awkward social loop.
+            Everyone is busy, money lands at different times, and no one wants to keep chasing friends for their share.
+            porshn is meant to reduce that tension and replace it with clarity.
+          </p>
+          <p>
+            The value is not only financial tracking. It is social relief: fewer follow-ups, clearer expectations,
+            and a shared system that makes group living feel less chaotic.
+          </p>
+        </section>
+
+        <section class="panel">
+          <h2>Current product thinking</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <strong>01. Shared groups</strong>
+              <p>Private groups keep expenses in context so users only see the bills and tasks relevant to their household or team.</p>
+            </article>
+            <article class="timeline-item">
+              <strong>02. Incoming and paid bills</strong>
+              <p>Track expenses whether they are upcoming, already covered, or waiting for others to settle their share.</p>
+            </article>
+            <article class="timeline-item">
+              <strong>03. Chore rotation</strong>
+              <p>The concept explores letting groups assign chores and potentially use chore completion as part of contribution balancing.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <aside class="side-column">
+        <section class="callout-card">
+          <span class="label">Tech stack</span>
+          <div class="stack-list">
+            <div class="stack-item">
+              <strong>Backend</strong>
+              <span>TypeScript, NestJS, Prisma, PostgreSQL</span>
             </div>
-        </details>
-
-
-        <details class="collapsible">
-            <summary>Why It Matters</summary>
-            <div class="content">
-                <p>
-                    As a university student, I can relate to the situation we face when a bill is on the table.</br>
-                    Seeing as we are busy studying, we are often caught being unable to pay our fair share.</br>
-                    porshn has been conceived to ensure that this doesn't have to be the case, with split bills being
-                    easily sorted whether paid or incoming, in a social/group setting.
-                </p>
+            <div class="stack-item">
+              <strong>Mobile</strong>
+              <span>React Native with Expo</span>
             </div>
-        </details>
-
-        <details class = "collapsible">
-            <summary>Tech Stack</summary>
-            <div class="content">
-                <p>
-                    <strong>Backend</strong>: TypeScript, NestJS, Prisma, PostgreSQL</br>
-                    <strong>Mobile</strong>: React Native (Expo)</br>
-                    <strong>Infrastructure</strong>: Docker (local), CI/CD (TBD), EAS for mobile builds (TBD)</br>
-                    <strong>Standards</strong>: ESLint, Jest, Supertest, ADRs, Changelog
-                </p>
+            <div class="stack-item">
+              <strong>Infrastructure</strong>
+              <span>Docker locally, EAS planned, CI/CD still to be defined</span>
             </div>
-        </details>
+            <div class="stack-item">
+              <strong>Engineering standards</strong>
+              <span>ESLint, Jest, Supertest, ADRs, changelog discipline</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="callout-card">
+          <span class="label">Status snapshot</span>
+          <div class="meta-list">
+            <div class="meta-item">
+              <strong>Stage</strong>
+              <span>Backend under development</span>
+            </div>
+            <div class="meta-item">
+              <strong>What this page is</strong>
+              <span>A polished concept overview based on currently available project information</span>
+            </div>
+            <div class="meta-item">
+              <strong>What comes next</strong>
+              <span>Implementation milestones, screenshots, and product metrics once the build matures</span>
+            </div>
+          </div>
+        </section>
+      </aside>
     </main>
-    
+
+    <a href="#top" id="scroll-top-btn" aria-label="Back to top">&uarr;</a>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Sergio Insuasti | Built with Jekyll, HTML, and CSS</p>
+    </footer>
+  </div>
+
+  <script>
+    const scrollBtn = document.getElementById("scroll-top-btn");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollBtn.classList.add("show");
+      } else {
+        scrollBtn.classList.remove("show");
+      }
+    });
+  </script>
 </body>
+</html>

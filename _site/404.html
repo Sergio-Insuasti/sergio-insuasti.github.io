@@ -2,76 +2,178 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>404 – Page Not Found</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 | </title>
+  <meta
+    name="description"
+    content="The page you requested could not be found. Return to Sergio Insuasti's portfolio homepage."
+  />
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
   <style>
-    main {
-      text-align: center;
-      padding: 4rem 1rem;
-      max-width: 700px;
-      margin: 0 auto;
-      animation: fadeIn 0.6s ease-in forwards;
+    @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Inter:wght@400;600;700;800;900&display=swap");
+
+    :root {
+      --ink: #e7fff5;
+      --muted: #93aa9f;
+      --paper: #07110f;
+      --mist: #12231f;
+      --sage: #14f195;
+      --sage-dark: #0bbf78;
+      --clay: #72a7ff;
+      --line: rgba(231, 255, 245, 0.14);
+      --shadow: 0 22px 70px rgba(0, 0, 0, 0.42);
     }
 
-    main h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: white;
+    * {
+      box-sizing: border-box;
     }
 
-    main p {
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      color: #ccc;
+    html {
+      min-height: 100%;
+      background:
+        radial-gradient(circle at 12% 8%, rgba(20, 241, 149, 0.16), transparent 28%),
+        radial-gradient(circle at 88% 0%, rgba(114, 167, 255, 0.13), transparent 30%),
+        linear-gradient(180deg, #07110f 0%, #091511 54%, #050b0a 100%);
     }
 
-    .gif-container img {
-      max-width: 300px;
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: var(--ink);
+      font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    }
+
+    .shell {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 0.72fr);
+      gap: clamp(1.2rem, 4vw, 3rem);
+      width: min(960px, 100%);
+      padding: clamp(1.25rem, 4vw, 3.5rem);
+      border: 1px solid var(--line);
       border-radius: 8px;
-      border: 2px solid rgb(147, 176, 180);
-      margin: 2rem 0;
+      background:
+        linear-gradient(135deg, rgba(13, 27, 23, 0.96), rgba(7, 17, 15, 0.9)),
+        var(--paper);
+      box-shadow: var(--shadow);
     }
 
-    a.back-home {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background-color: #1e1e1e;
-      color: #ffffff;
-      border: 2px solid rgb(147, 176, 180);
-      border-radius: 5px;
-      font-weight: 500;
+    .eyebrow {
+      margin: 0 0 0.8rem;
+      color: var(--sage);
+      font-size: 0.76rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 8ch;
+      margin: 0;
+      color: var(--ink);
+      font-family: "IBM Plex Mono", Consolas, monospace;
+      font-size: clamp(4rem, 12vw, 8rem);
+      line-height: 0.9;
+    }
+
+    p {
+      max-width: 42rem;
+      margin: 1rem 0 0;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 2rem;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 0.78rem 0.95rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      color: var(--ink);
+      font-weight: 900;
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: transform 180ms ease, background-color 180ms ease;
     }
 
-    a.back-home:hover {
-      background-color: rgb(147, 176, 180);
-      color: white;
-      transform: scale(1.05);
+    a:hover,
+    a:focus-visible {
+      transform: translateY(-3px);
     }
 
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      color: #969292;
-      font-size: 0.9rem;
+    .primary {
+      border-color: var(--sage-dark);
+      background: var(--sage);
+      color: #04100c;
+    }
+
+    .side-card {
+      align-self: end;
+      display: grid;
+      gap: 0.75rem;
+      padding: 1rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(231, 255, 245, 0.06);
+    }
+
+    .side-card strong {
+      color: var(--clay);
+      font-family: "IBM Plex Mono", Consolas, monospace;
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+
+    .side-card p {
+      margin: 0;
+    }
+
+    @media (max-width: 720px) {
+      .shell {
+        grid-template-columns: 1fr;
+      }
+
+      .actions {
+        flex-direction: column;
+      }
+
+      a {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>😢 Oops! This site isn't quite ready yet!</h1>
-    <p>The page you're looking for doesn’t exist. But that’s okay — let’s get you back on track.</p>
+  <main class="shell">
+    <section>
+      <p class="eyebrow">Page not found</p>
+      <h1>404</h1>
+      <p>
+        This page is not available. The main portfolio still has the selected
+        work, project case studies, CV, and contact paths you were probably
+        looking for.
+      </p>
+      <div class="actions">
+        <a class="primary" href="/">Return home</a>
+        <a href="/#work">View work</a>
+        <a href="mailto:">Email Sergio</a>
+      </div>
+    </section>
 
-    <div class="gif-container">
-      <img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" alt="Lost in space GIF" />
-    </div>
-
-    <a class="back-home" href="/">← Take me back home</a>
+    <aside class="side-card">
+      <strong>SI</strong>
+      <p>Software, data, economics, and practical systems for clearer workflows.</p>
+    </aside>
   </main>
-
-  <footer>
-    © 2025 Sergio Insuasti | Built with Jekyll, HTML & CSS
-  </footer>
 </body>
 </html>

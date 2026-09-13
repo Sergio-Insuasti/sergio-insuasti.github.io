@@ -2,52 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Patient Management System | Sergio Insuasti</title>
 
     <link href="../styles.css" rel="stylesheet" />
     <link href="projects_styles.css" rel="stylesheet" />
 
-    <style>
-        .pdf-container {
-            margin-top: 2rem;
-            width: 100%;
-            height: 85vh;
-            border-radius: 8px;
-            overflow: hidden;
-            background: #0d1117;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-    </style>
 </head>
 
-<body>
-    <header>
-        <h1>Patient Management System</h1>
-        <h2>Production-Ready Patient Management Backend</h2>
+<body class="project-page" id="top">
+    <main class="page-shell">
+        <section class="hero" aria-labelledby="project-title">
+            <p class="hero-kicker">Healthcare Systems</p>
+            <h1 id="project-title">Patient Management System</h1>
+            <p>
+                A production-ready patient management backend presented through its
+                full technical documentation. This page reframes the project as a
+                polished case-study entry while keeping the original source material
+                immediately accessible.
+            </p>
 
-        <nav class="nav">
-            <a href="/index.html">Home</a>
-            <a href="/index.html#projects">Back to Projects</a>
-            <a
-                href="https://github.com/Sergio-Insuasti/patient-management"
-                target="_blank"
-            >
-                View on GitHub
-            </a>
-        </nav>
-    </header>
+            <div class="hero-actions">
+                <a
+                    href="https://github.com/Sergio-Insuasti/patient-management"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    View on GitHub
+                </a>
+                <a href="../assets/patient-system.pdf" target="_blank" rel="noreferrer">
+                    Open Documentation PDF
+                </a>
+                <a href="/index.html#work">Back to Projects</a>
+            </div>
 
-    <main>
-        <div class="pdf-container">
-            <iframe
-                src="../assets/patient-system.pdf"
-                title="Patient Management System Documentation"
-            ></iframe>
+            <div class="hero-meta" aria-label="Project metadata">
+                <span>Backend-Focused Build</span>
+                <span>Technical Documentation Included</span>
+                <span>Portfolio Case Study</span>
+            </div>
+        </section>
+
+        <div class="content-grid">
+            <section class="panel" id="documentation" aria-labelledby="documentation-title">
+                <h2 id="documentation-title">Project Documentation</h2>
+                <p>
+                    The complete project write-up is embedded below for in-page review.
+                    It remains the central source of detail for the system architecture,
+                    implementation decisions, and delivery scope.
+                </p>
+
+                <div class="document-frame">
+                    <iframe
+                        src="../assets/patient-system.pdf"
+                        title="Patient Management System Documentation"
+                    ></iframe>
+                </div>
+
+                <p class="footnote">
+                    Prefer a full-window reading experience? Use the PDF link above to
+                    open the documentation in a dedicated tab.
+                </p>
+            </section>
+
+            <aside class="sticky-panel" aria-labelledby="overview-title">
+                <h2 id="overview-title">Overview</h2>
+                <p>
+                    This project page now acts as a structured entry point: a concise
+                    introduction, clear navigation actions, and an embedded document
+                    experience for reviewing the backend work in context.
+                </p>
+
+                <ul>
+                    <li>Production-ready patient management backend</li>
+                    <li>Primary deliverable surfaced as embedded technical documentation</li>
+                    <li>Direct navigation back into the wider portfolio</li>
+                </ul>
+
+                <div class="jump-links" aria-label="Quick navigation">
+                    <a class="jump-link" href="#documentation">Jump to Documentation</a>
+                    <a class="jump-link" href="/index.html">Return Home</a>
+                    <a class="jump-link" href="#top">Back to Top</a>
+                </div>
+            </aside>
         </div>
     </main>
 </body>
